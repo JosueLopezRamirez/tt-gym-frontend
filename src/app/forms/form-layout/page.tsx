@@ -1,24 +1,17 @@
+"use client";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import SelectGroupOne from "@/components/SelectGroup/SelectGroupOne";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Next.js Form Layout | TailAdmin - Next.js Dashboard Template",
-  description:
-    "This is Next.js Form Layout page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
-};
+import Button from "@/components/Button";
 
 const FormLayout = () => {
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="FormLayout" />
-
       <div className="grid grid-cols-1 gap-9 sm:grid-cols-2">
-        <div className="flex flex-col gap-9">
-          {/* <!-- Contact Form --> */}
+        {/* <div className="flex flex-col gap-9">
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
@@ -92,10 +85,13 @@ const FormLayout = () => {
               </div>
             </form>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-9">
-          {/* <!-- Sign In Form --> */}
+        </div> */}
+        <Button text="Sign In" variant="primary" onClick={()=>{}}/>
+                <Button text="Sign In" variant="secondary" onClick={()=>{}}/>
+                <Button text="Sign In" variant="outline" onClick={()=>{}}/>
+                <Button text="Sign In" variant="danger" onClick={()=>{}}/>
+                <Button text="Sign In" variant="warning" onClick={()=>{}}/>
+        {/* <div className="flex flex-col gap-9">
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
@@ -164,15 +160,15 @@ const FormLayout = () => {
                     Forget password?
                   </Link>
                 </div>
-
-                <button className="flex w-full justify-center rounded bg-primary p-3 font-medium text-gray hover:bg-opacity-90">
-                  Sign In
-                </button>
+                <Button text="Sign In" variant="primary" onClick={()=>{}}/>
+                <Button text="Sign In" variant="secondary" onClick={()=>{}}/>
+                <Button text="Sign In" variant="outline" onClick={()=>{}}/>
+                <Button text="Sign In" variant="danger" onClick={()=>{}}/>
+                <Button text="Sign In" variant="warning" onClick={()=>{}}/>
               </div>
             </form>
           </div>
 
-          {/* <!-- Sign Up Form --> */}
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
             <div className="border-b border-stroke px-6.5 py-4 dark:border-strokedark">
               <h3 className="font-medium text-black dark:text-white">
@@ -231,7 +227,7 @@ const FormLayout = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </DefaultLayout>
   );
